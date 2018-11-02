@@ -22,7 +22,7 @@ public class GoldRush {
     private final String OBJECTIVE = "SAN FRANCISCO";
     private final String OBJECTIVE_STATE = "CA";
     private final double[] OBJ_COORDINATES = { -122.43, 37.77 }; // long, lat
-    private final int INCREMENT = 5;
+    private final int INCREMENT = 50;
     private final int ITERATIONS = 10;
 
     private double movePoint(double point, double objective) {
@@ -39,8 +39,8 @@ public class GoldRush {
         if (Arrays.equals(coordinates, this.OBJ_COORDINATES)) {
             return coordinates;
         } else {
-            double longitude = this.movePoint(coordinates[0], OBJ_COORDINATES[0]);
-            double latitude = this.movePoint(coordinates[1], OBJ_COORDINATES[1]);
+            double longitude = this.movePoint(coordinates[0], this.OBJ_COORDINATES[0]);
+            double latitude = this.movePoint(coordinates[1], this.OBJ_COORDINATES[1]);
             double[] new_location = { longitude, latitude };
             return new_location;
         }
