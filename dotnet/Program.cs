@@ -8,7 +8,7 @@ namespace tour
 {
     class GoldRush
     {
-        private String MONGO_URI = "mongodb://enrique:Password1!@mycluster-shard-00-00-31izr.mongodb.net:27017,mycluster-shard-00-01-31izr.mongodb.net:27017,mycluster-shard-00-02-31izr.mongodb.net:27017/test?ssl=true&replicaSet=myCluster-shard-0&authSource=admin&retryWrites=true";
+        private String MONGO_URI = "";
         private String OBJECTIVE = "SAN FRANCISCO";
         private String OBJECTIVE_STATE = "CA";
         private double[] OBJ_COORDINATES = new double[] { -122.43, 37.77 };  // long, lat
